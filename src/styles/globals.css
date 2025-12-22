@@ -1,0 +1,66 @@
+/* Global base styles that don't rely on @apply
+   (avoids “unknown utility” during compilation) */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+/* Body defaults (mirror the classes in index.html for SSR consistency) */
+body {
+    background-color: var(--color-noir-950);
+    color: var(--color-ash);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection — also covered by your `selection:*` utilities in markup */
+::selection {
+    background-color: var(--color-ash);
+    color: var(--color-noir-950);
+}
+
+/* Minimal container helper used throughout the app.
+   Using raw CSS here avoids @apply errors on px-6 / max-w-7xl. */
+.container-xl {
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    /* = px-6 */
+    max-width: 80rem;
+    /* = 7xl */
+}
+
+/* Images behave nicely by default */
+img,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Subtle scrollbar styling (optional) */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #24242a #0a0a0b;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #24242a;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0a0a0b;
+}

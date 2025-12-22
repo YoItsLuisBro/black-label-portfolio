@@ -1,0 +1,72 @@
+const unsplash = (id) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1400&q=80`;
+
+export default [
+  {
+    slug: "aphelio",
+    title: "Aphelio — Pomodoro Timer",
+    cover: '/projects/aphelio-hero.png', // TODO: replace with a real screenshot you add
+    tags: ["Web App", "React", "TypeScript"],
+    role: "Design & Dev",
+    summary:
+      "Space-themed Pomodoro timer with animated starfield, radial progress ring, global hotkeys, desktop notifications, and lightweight stats.",
+    outcome: "Live demo on Vercel.",
+    url: "https://aphelio.vercel.app",
+    repo: "https://github.com/YoItsLuisBro/aphelio",
+  },
+  // {
+  //   slug: "weather-scout",
+  //   title: "Weather Scout",
+  //   cover: unsplash("1517248135467-4c7edcad34c4"),
+  //   tags: ["Web App", "API"],
+  //   role: "Frontend",
+  //   summary: "Lightweight weather dashboard with hourly and 7-day views.",
+  //   outcome: "Core Web Vitals all green.",
+  //   url: "https://weather-scout.example.com",
+  //   repo: "https://github.com/you/weather-scout",
+  // },
+  // {
+  //   slug: "task-forge",
+  //   title: "Task Forge",
+  //   cover: unsplash("1469474968028-56623f02e42e"),
+  //   tags: ["Full-Stack", "Auth"],
+  //   role: "Full-Stack",
+  //   summary: "Kanban tasks with drag-drop and role-based access.",
+  //   outcome: "Team adoption in class project.",
+  //   url: "https://task-forge.example.com",
+  //   repo: "https://github.com/you/task-forge",
+  // },
+  // {
+  //   slug: "nocturne-notes",
+  //   title: "Nocturne Notes",
+  //   cover: unsplash("1491555104025-6f4d8a843cf4"),
+  //   tags: ["PWA", "Offline"],
+  //   role: "Frontend",
+  //   summary: "Offline-first notes app with local encryption.",
+  //   outcome: "Works offline, installable PWA.",
+  //   url: "https://nocturne-notes.example.com",
+  //   repo: "https://github.com/you/nocturne-notes",
+  // },
+  // {
+  //   slug: "obsidian-labs-site",
+  //   title: "Obsidian Labs Site",
+  //   cover: unsplash("1500530855697-b586d89ba3ee"),
+  //   tags: ["Marketing", "SSR"],
+  //   role: "Design & Dev",
+  //   summary: "Marketing site with MDX sections and image optimization.",
+  //   outcome: "+41% trial starts after launch.",
+  //   url: "https://obsidian-labs.example.com",
+  //   repo: "https://github.com/you/obsidian-labs-site",
+  // },
+  // {
+  //   slug: "carbon-press-blog",
+  //   title: "Carbon Press Blog",
+  //   cover: unsplash("1512290923902-8a9f81dc236c"),
+  //   tags: ["Blog", "CMS"],
+  //   role: "Frontend",
+  //   summary: "Blog with code syntax highlighting and search.",
+  //   outcome: "First 10 posts published.",
+  //   url: "https://carbon-press.example.com",
+  //   repo: "https://github.com/you/carbon-press",
+  // },
+];
