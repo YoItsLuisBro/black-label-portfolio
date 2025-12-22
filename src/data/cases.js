@@ -3,16 +3,30 @@ const unsplash = (id) =>
 
 export default [
   {
-    slug: "aphelio",
-    title: "Aphelio — Pomodoro Timer",
-    cover: '/projects/aphelio-hero.png', // TODO: replace with a real screenshot you add
-    tags: ["Web App", "React", "TypeScript"],
-    role: "Design & Dev",
+    slug: "Deadline",
+    title: "Deadline Machine",
+    cover: "/projects/deadline-hero.png",
+    tags: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS",
+      "Supabase",
+      "Vercel",
+      "Productivity",
+      "Task Board",
+      "Focus Timer",
+      "Authentication",
+      "Brutalist UI",
+      "Neo-brutalism",
+    ],
+    role: "Solo Developer (Frontend + Supabase integration)",
     summary:
-      "Space-themed Pomodoro timer with animated starfield, radial progress ring, global hotkeys, desktop notifications, and lightweight stats.",
-    outcome: "Live demo on Vercel.",
-    url: "https://aphelio.vercel.app",
-    repo: "https://github.com/YoItsLuisBro/aphelio",
+      "A brutalist to-do + focus timer app that organizes tasks into TODAY / THIS WEEK / DUMPING GROUND, with loud status tags (OVERDUE / DO IT NOW / DONE) and a no-nonsense focus engine.",
+    outcome:
+      "Shipped a deployed MVP with Supabase email/password authentication + session persistence and a lane-based task workflow (move between columns, overdue/urgent/done labeling, destructive delete modal). Added an adjustable MM:SS timer panel with start/pause/reset and an end-of-timer prompt designed to push focus.",
+    url: "https://deadlinemachine.vercel.app",
+    repo: "https://github.com/YoItsLuisBro/deadlinemachine",
   },
   // {
   //   slug: "weather-scout",
