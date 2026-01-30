@@ -160,7 +160,7 @@ export default function Contact() {
               <li>
                 <a
                   className="underline decoration-white/20 hover:decoration-white"
-                  href="#"
+                  href="https://www.instagram.com/itsluis.bro"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -170,21 +170,21 @@ export default function Contact() {
               <li>
                 <a
                   className="underline decoration-white/20 hover:decoration-white"
-                  href="#"
+                  href="https://www.linkedin.com/in/fonsecaluisfelipe/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Dribbble
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
                   className="underline decoration-white/20 hover:decoration-white"
-                  href="#"
+                  href="https://www.youtube.com/@yoitsluisbro"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  LinkedIn
+                  YouTube
                 </a>
               </li>
             </ul>
