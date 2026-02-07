@@ -1,5 +1,5 @@
-const unsplash = (id) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1400&q=80`;
+// const unsplash = (id) =>
+//   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1400&q=80`;
 
 export default [
   {
@@ -27,6 +27,35 @@ export default [
       "Shipped a deployed MVP with Supabase email/password authentication + session persistence and a lane-based task workflow (move between columns, overdue/urgent/done labeling, destructive delete modal). Added an adjustable MM:SS timer panel with start/pause/reset and an end-of-timer prompt designed to push focus.",
     url: "https://deadlinemachine.vercel.app",
     repo: "https://github.com/YoItsLuisBro/deadlinemachine",
+  },
+  {
+    slug: "BrutalLogbook",
+    title: "Brutal Logbook",
+    cover: "/projects/brutal-logbook-hero.png",
+    tags: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "CSS",
+      "Supabase",
+      "Vercel",
+      "CRUD",
+      "Authentication",
+      "Database",
+      "Workspace",
+      "Search / Filter",
+      "Brutalist UI",
+      "Neo-brutalism",
+      "Productivity",
+      "Logbook",
+    ],
+    role: "Solo Developer (Frontend + Supabase integration)",
+    summary:
+      "A brutalist logbook app for capturing and organizing entries (links/notes) with fast add, clean structure, and no-fluff UI—built for people who want a simple system that doesn’t get in the way.",
+    outcome:
+      "Shipped a deployed MVP on Vercel with Supabase-backed persistence and auth-ready architecture. Implemented core create/read/update/delete flows, workspace-based organization, and filtering so users can quickly find and manage saved items. Designed a harsh, neo-brutal interface with high-contrast typography and direct action patterns.",
+    url: "https://brutal-logbook.vercel.app/",
+    repo: "https://github.com/YoItsLuisBro/brutal-logbook",
   },
   // {
   //   slug: "weather-scout",
