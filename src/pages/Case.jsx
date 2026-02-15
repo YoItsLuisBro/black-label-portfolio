@@ -1,27 +1,36 @@
-import { useParams, Link } from 'react-router-dom'
-import data from '../data/cases'
+import { useParams, Link } from "react-router-dom";
+import data from "../data/cases";
 
 export default function Case() {
-  const { slug } = useParams()
-  const item = data.find(c => c.slug === slug)
+  const { slug } = useParams();
+  const item = data.find((c) => c.slug === slug);
 
   if (!item) {
     return (
       <div className="container-xl py-24">
-        <p>Case not found. <Link className="underline" to="/">Back to work</Link></p>
+        <p>
+          Case not found.{" "}
+          <Link className="underline" to="/">
+            Back to work
+          </Link>
+        </p>
       </div>
-    )
+    );
   }
 
   return (
     <article>
-      <div className="relative">
-        <img src={item.cover} alt="" className="w-full h-[50svh] md:h-[70svh] object-cover" />
-        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"/>
+      <div className="relative overflow-hidden">
+        <img
+          src={item.cover}
+          alt=""
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
         <div className="absolute bottom-8 left-0 w-full">
           <div className="container-xl">
             <h1 className="text-3xl md:text-5xl font-semibold">{item.title}</h1>
-            <p className="text-white/70 mt-2">{item.tags.join(' · ')}</p>
+            <p className="text-white/70 mt-2">{item.tags.join(" · ")}</p>
           </div>
         </div>
       </div>
@@ -62,9 +71,11 @@ export default function Case() {
         </p>
 
         <p className="mt-8">
-          <Link to="/" className="no-underline text-white/80 hover:text-white">← Back to work</Link>
+          <Link to="/" className="no-underline text-white/80 hover:text-white">
+            ← Back to work
+          </Link>
         </p>
       </div>
     </article>
-  )
+  );
 }
